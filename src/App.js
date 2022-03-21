@@ -18,7 +18,7 @@ function App() {
   return (
    <div className="kutsekas">
 
-     <h1>KHK {name}</h1>
+     <h1>KHK </h1>
        <div className="kast">
        <div className="chat-container">
            {chats.map((c)=> (
