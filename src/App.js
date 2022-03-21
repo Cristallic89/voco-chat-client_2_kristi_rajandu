@@ -4,8 +4,8 @@ import './App.css';
 function App() {
     const [name, setName] = useState("Anonüümne Vaal");
     const [chats, setChats] = useState([
-        {name:'Introvertne Kiivi',message:'Sõnum 1' },
-        {name:'Häbelik Vihmauss',message:'Sõnum 2' },
+        {name:'Introvertne Kiivi',message:'Läki Siriusse burksi jahile?' },
+        {name:'Häbelik Vihmauss',message:'Mis burksi? Suvi tuleb! Kuhu sa need süssarid paned oma arust?' },
         ]);
     const [msg,setMsg] = useState('');
 
