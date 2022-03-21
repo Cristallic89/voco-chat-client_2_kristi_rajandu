@@ -2,7 +2,7 @@ import {useState} from 'react';
 import './App.css';
 
 function App() {
-    const [name, setName] = useState("Anonüümne Vaal");
+    const [name, setName] = useState("");
     const [chats, setChats] = useState([
         {name:'Introvertne Kiivi',message:'Läki Siriusse burksi jahile?' },
         {name:'Häbelik Vihmauss',message:'Mis burksi? Suvi tuleb! Kuhu sa need süssarid paned oma arust?' },
@@ -18,7 +18,7 @@ function App() {
   return (
    <div className="kutsekas">
 
-     <h1>KHK: {name}</h1>
+     <h1>KHK {name}</h1>
        <div className="kast">
        <div className="chat-container">
            {chats.map((c)=> (
