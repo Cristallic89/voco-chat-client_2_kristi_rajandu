@@ -2,7 +2,7 @@ import {useState} from 'react';
 import './App.css';
 
 function App() {
-    const [name, setName] = useState("dummy user");
+    const [name, setName] = useState("Anonüümne Vaal");
     const [chats, setChats] = useState([
         {name:'user1',message:'message1' },
         {name:'dummyUser',message:'message2' },
@@ -19,6 +19,7 @@ function App() {
    <div className="kutsekas">
 
      <h1>KHK: {name}</h1>
+       <div className="kast">
        <div className="chat-container">
            {chats.map((c)=> (
                <div className={`container ${c.name===name ? 'me': ''}`}>
@@ -32,17 +33,22 @@ function App() {
 
        <div className="btm">
            {<div>
-               <input type="text" placeholder="  Enter name" onBlur={e => setName(e.target.value)}>
+               <input type="text" placeholder="  Enter name"
+               onBlur={e => setName(e.target.value)}>
 
                </input>
+
            </div>}
+
            <input type="text" onInput={e=>setMsg(e.target.value)} value={msg}
-            placeholder=" Enter your chat"></input>
+            placeholder=" Enter your chat">
+
+           </input>
 
            <button onClick={e=>sendChat()}>Send</button>
 
-
-       </div>
+      </div>
+   </div>
    </div>
   );
 }
