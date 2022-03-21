@@ -4,8 +4,8 @@ import './App.css';
 function App() {
     const [name, setName] = useState("Anonüümne Vaal");
     const [chats, setChats] = useState([
-        {name:'user1',message:'message1' },
-        {name:'dummyUser',message:'message2' },
+        {name:'Introvertne Kiivi',message:'Sõnum 1' },
+        {name:'Häbelik Vihmauss',message:'Sõnum 2' },
         ]);
     const [msg,setMsg] = useState('');
 
