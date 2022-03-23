@@ -9,11 +9,14 @@ function App() {
         ]);
     const [msg,setMsg] = useState('');
 
+
     const sendChat = ()=>{
         const c = [...chats];
         c.push({name,message:msg});
         setChats(c);
+        setMsg('')
     }
+
 
   return (
    <div className="kutsekas">
@@ -45,9 +48,8 @@ function App() {
 
            </input>
 
-           <button onClick={e=>sendChat()}>Send</button>
+           <button onClick={e=>sendChat()}>Send</button></div>
 
-      </div>
    </div>
    </div>
   );

@@ -21,6 +21,19 @@
   background-color: #1e1e1e;
 }
 
+button {
+  background-color: #232323;
+  color: antiquewhite;
+  border-radius: 10%;
+  border: 5px;
+  margin-left: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+
+
 .me .chatbox{
   background-color: #424242;
 }
@@ -28,9 +41,7 @@
 .container{
   display: flex;
 }
-.container.me{
-  flex-direction: row-reverse;
-}
+
 
 
 .kast{
